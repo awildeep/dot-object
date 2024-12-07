@@ -1,3 +1,5 @@
+Fork of https://github.com/rhalff/dot-object to update
+
 [![Build Status](https://travis-ci.org/rhalff/dot-object.png)](https://travis-ci.org/rhalff/dot-object)
 
 Dot-Object

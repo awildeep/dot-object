@@ -1,13 +1,13 @@
 'use strict'
 
-const gulp = require('gulp')
-const gutil = require('gulp-util')
-const mocha = require('gulp-mocha')
-const hf = require('gulp-headerfooter')
-const rename = require('gulp-rename')
-const uglify = require('gulp-uglify')
-const beautify = require('gulp-beautify')
-const eslint = require('gulp-eslint')
+import gulp from 'gulp'
+import log from 'fancy-log'
+import mocha from 'gulp-mocha'
+import hf from 'gulp-headerfooter'
+import rename from 'gulp-rename'
+import uglify from 'gulp-uglify'
+import beautify from 'gulp-beautify'
+import eslint from 'gulp-eslint'
 
 const DEST = 'dist/'
 
@@ -24,7 +24,7 @@ gulp.task('lint', function (done) {
 gulp.task('mocha', function (done) {
   gulp.src(['test/**/*.js'])
     .pipe(mocha())
-    .on('error', gutil.log)
+    .on('error', log)
   done()
 })
 
